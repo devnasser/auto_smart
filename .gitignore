@@ -1,6 +1,105 @@
-downloads/
-*.log
+# === Auto Smart - Ultra .gitignore ===
+
+# === Temporary Files ===
 *.tmp
+*.temp
+*.bak
+*.backup
+*~
+.*.swp
+.*.swo
+*.orig
+.*.rej
+
+# === Logs ===
+*.log
+logs/
+storage/logs/*.log
+
+# === Cache ===
+*.cache
+cache/
+storage/cache/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+
+# === Environment ===
 .env
+.env.local
+.env.production
+.env.staging
+
+# === Dependencies ===
+vendor/
 node_modules/
+composer.lock
+package-lock.json
+
+# === Build Output ===
+public/build/
+public/hot
+public/storage
+storage/app/public
+
+# === IDE ===
+.vscode/
+.idea/
+*.sublime-*
+.phpstorm.meta.php
+
+# === OS ===
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# === Laravel Specific ===
+bootstrap/compiled.php
+app/storage/
+.env.*.php
+.env.php
+
+# === Performance ===
+storage/performance/*.ini
+storage/performance/*.conf
+storage/performance/*.json
+
+# === Security ===
+security/keys/*
+security/ssl/*
+!security/keys/.gitkeep
+!security/ssl/.gitkeep
+
+# === Monitoring ===
+monitoring/logs/*
+monitoring/reports/*
+!monitoring/logs/.gitkeep
+!monitoring/reports/.gitkeep
+
+# === Cleanup ===
+storage/cleanup/*
+!storage/cleanup/.gitkeep
+
+# === Innovation Storage ===
+storage/innovation/*.json
+storage/scalability/*.json
+storage/scalability/*.yaml
+storage/scalability/*.conf
+
+# === Development ===
+*.sql
+*.sqlite-journal
+database/*.sqlite
+
+# === Testing ===
+coverage/
+.phpunit.result.cache
+tests/_output/
+
+# === Documentation Build ===
+docs/build/
+docs/_site/
